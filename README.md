@@ -75,6 +75,7 @@ springboot-cicd-aws/
 │       └── exception/         # Global exception handling
 ├── monitoring/
 │   └── prometheus.yml         # Prometheus scrape config
+├── screenshots/               # Project screenshots
 ├── .github/
 │   └── workflows/
 │       ├── build-push.yml     # CI - Build & Push to Docker Hub
@@ -120,6 +121,31 @@ springboot-cicd-aws/
 - Spring Actuator exposes `/actuator/health` and `/actuator/prometheus`
 - Prometheus scrapes metrics every 15 seconds
 - Grafana dashboard visualizing JVM metrics, CPU usage, memory, HTTP requests
+
+---
+
+## 📸 Screenshots
+
+### 🔄 CI/CD Pipeline — All Workflows Green
+![GitHub Actions](screenshots/github-actions.png)
+
+### 🚀 Build and Push — 5 Successful Runs
+![Build and Push](screenshots/build-push.png)
+
+### ☁️ Deploy to EC2 — Auto Deploy Workflow
+![Deploy to EC2](screenshots/deploy-ec2.png)
+
+### 📊 Grafana Monitoring Dashboard
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
+
+### 📈 JVM Metrics in Grafana Explore
+![JVM Metrics](screenshots/jvm-metrics.png)
+
+### 🎯 Prometheus Targets — springboot-api UP
+![Prometheus Targets](screenshots/prometheus-targets.png)
+
+### 🐳 Docker Desktop — Containers Running
+![Docker Containers](screenshots/docker-containers.png)
 
 ---
 
@@ -251,10 +277,13 @@ curl -X POST http://localhost:8080/api/products \
 
 ## 👨‍💻 Author
 
-**Chandan Gadewar**
-- GitHub: [@Chandangadewar](https://github.com/Chandangadewar)
-- Docker Hub: [chandan240603](https://hub.docker.com/u/chandan240603)
+**Chandan Gadewar**  
+*DevOps Engineer | Cloud Engineer*
+
+[![GitHub](https://img.shields.io/badge/GitHub-Chandangadewar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Chandangadewar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Chandan%20Gadewar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chandan-gadewar-066194258/)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-chandan240603-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/chandan240603)
 
 ---
 
-## ⭐ If you found this project helpful, give it a star!
+⭐ If you found this project helpful, give it a star!
