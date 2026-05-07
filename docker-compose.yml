@@ -7,12 +7,29 @@ services:
       SPRING_DATA_MONGODB_URI: mongodb://db:27017/springboot_db
     depends_on:
       - db
+
   db:
     image: mongo:6
     ports:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - app
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
 
 volumes:
   mongo_data:
