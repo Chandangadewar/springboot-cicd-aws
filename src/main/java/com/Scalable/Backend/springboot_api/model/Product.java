@@ -25,4 +25,6 @@ public class Product {
 
     @NotNull(message = "Price is required")
     private Double price;
+
+    private String description;
 }
